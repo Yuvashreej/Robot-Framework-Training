@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-12-03T17:45:46.285528" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot S2A2 Signup Using Keyword" source="C:\Users\Yuvashree.J\Documents\Python Programming\Robot Framework Automation\Robotframework_Assignments1\robot_s2a2_signup_using_keyword.robot">
+<test id="s1-t1" name="New user Signup using Keywords" line="12">
+<kw name="open the browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-03T17:45:46.443171" level="INFO">Opening browser 'chrome' to base url 'https://www.automationexercise.com/login'.</msg>
+<arg>${website link}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-03T17:45:46.443010" elapsed="5.864011"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-03T17:45:52.307483" elapsed="0.076709"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath://h2[normalize-space()='New User Signup!']</arg>
+<arg>${wait time}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-03T17:45:52.384864" elapsed="0.041919"/>
+</kw>
+<status status="PASS" start="2025-12-03T17:45:46.442575" elapsed="5.984624"/>
+</kw>
+<kw name="Enter valid name and email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-03T17:45:52.430466" level="INFO">Typing text 'Yuvashree J' into text field 'xpath=//input[@placeholder='Name']'.</msg>
+<arg>xpath=//input[@placeholder='Name']</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-03T17:45:52.429305" elapsed="0.220489"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-03T17:45:52.651213" level="INFO">Typing text 'yuvashreej@gmail.com' into text field 'xpath=//input[@data-qa='signup-email']'.</msg>
+<arg>xpath=//input[@data-qa='signup-email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-03T17:45:52.650381" elapsed="0.203958"/>
+</kw>
+<status status="PASS" start="2025-12-03T17:45:52.428211" elapsed="0.426504"/>
+</kw>
+<kw name="click on login button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-03T17:45:52.856355" level="INFO">Clicking button 'xpath=//button[normalize-space()='Signup']'.</msg>
+<arg>xpath=//button[normalize-space()='Signup']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-03T17:45:52.855988" elapsed="0.205892"/>
+</kw>
+<status status="PASS" start="2025-12-03T17:45:52.855429" elapsed="0.206776"/>
+</kw>
+<kw name="Verify user is navigated to enter account information page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath://b[normalize-space()='Enter Account Information']</arg>
+<arg>${wait time}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-03T17:45:53.063630" elapsed="3.481208"/>
+</kw>
+<status status="PASS" start="2025-12-03T17:45:53.062877" elapsed="3.482147"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-03T17:45:56.546197" elapsed="2.339469"/>
+</kw>
+<status status="PASS" start="2025-12-03T17:45:46.442127" elapsed="12.443910"/>
+</test>
+<status status="PASS" start="2025-12-03T17:45:46.287196" elapsed="12.599708"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot S2A2 Signup Using Keyword" id="s1" pass="1" fail="0" skip="0">Robot S2A2 Signup Using Keyword</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
