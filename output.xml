@@ -1,197 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-12-04T16:10:41.953363" rpa="false" schemaversion="5">
-<suite id="s1" name="Robot S4A1 Create Account" source="C:\Users\Yuvashree.J\Documents\Python Programming\Robot Framework Automation\Robotframework_Assignments1\robot_s4a1_create_account.robot">
-<test id="s1-t1" name="Create new account" line="9">
+<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-12-07T00:34:48.929926" rpa="false" schemaversion="5">
+<suite id="s1" name="Handling Frames" source="C:\Users\Yuvashree.J\Documents\Python Programming\Robot Framework Automation\Robotframework_Test_cases\Handling_Frames.robot">
+<test id="s1-t1" name="Testing Frames Example 2" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:10:42.301187" level="INFO">Opening browser 'chrome' to base url 'https://www.automationexercise.com/login'.</msg>
-<msg time="2025-12-04T16:10:42.642801" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\Users\Yuvashree.J\AppData\Local\Programs\Python\Python313\Scripts\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.41); currently, chromedriver 143.0.7499.40 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
-<arg>${website link}</arg>
-<arg>${browser}</arg>
+<msg time="2025-12-07T00:34:49.260138" level="INFO">Opening browser 'chrome' to base url 'https://www.selenium.dev/selenium/docs/api/java/index.html'.</msg>
+<arg>https://www.selenium.dev/selenium/docs/api/java/index.html</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-04T16:10:42.300688" elapsed="4.395972"/>
+<status status="PASS" start="2025-12-07T00:34:49.259716" elapsed="4.730433"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-04T16:10:46.697683" elapsed="0.055174"/>
+<status status="PASS" start="2025-12-07T00:34:53.990973" elapsed="0.113839"/>
 </kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>xpath://h2[normalize-space()='New User Signup!']</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-12-04T16:10:46.753536" elapsed="0.045377"/>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-12-07T00:34:54.106939" level="INFO">Selecting frame 'packageListFrame'.</msg>
+<msg time="2025-12-07T00:34:54.346513" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-07T00:34:54.347503" level="FAIL">Element with locator 'packageListFrame' not found.</msg>
+<arg>packageListFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="FAIL" start="2025-12-07T00:34:54.105921" elapsed="0.251542">Element with locator 'packageListFrame' not found.</status>
 </kw>
-<kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>1s</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-12-04T16:10:46.799623" elapsed="0.000781"/>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>org.openqa.selenium.chrome</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-07T00:34:54.359550" elapsed="0.000099"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:10:46.801981" level="INFO">Typing text 'yuvashreej' into text field 'xpath://input[@placeholder='Name']'.</msg>
-<arg>xpath://input[@placeholder='Name']</arg>
-<arg>yuvashreej</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:10:46.801348" elapsed="3.241647"/>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="NOT RUN" start="2025-12-07T00:34:54.360518" elapsed="0.000107"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:10:50.060282" level="INFO">Typing text 'yuvaj@gmail.com' into text field 'xpath://input[@data-qa='signup-email']'.</msg>
-<arg>xpath://input[@data-qa='signup-email']</arg>
-<arg>yuvaj@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:10:50.059816" elapsed="3.305245"/>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<arg>packageFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="NOT RUN" start="2025-12-07T00:34:54.361214" elapsed="0.000064"/>
 </kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:10:53.366456" level="INFO">Clicking button 'xpath://button[normalize-space()='Signup']'.</msg>
-<arg>xpath://button[normalize-space()='Signup']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:10:53.365836" elapsed="6.904818"/>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>ChromeDriver</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-07T00:34:54.361717" elapsed="0.000056"/>
 </kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>xpath://b[normalize-space()='Enter Account Information']</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-12-04T16:11:00.271521" elapsed="1.087734"/>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="NOT RUN" start="2025-12-07T00:34:54.362151" elapsed="0.000052"/>
 </kw>
-<kw name="Select Radio Button" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:11:01.364252" level="INFO">Selecting 'Mrs' from radio button 'title'.</msg>
-<arg>title</arg>
-<arg>Mrs</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<status status="PASS" start="2025-12-04T16:11:01.363745" elapsed="4.322236"/>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<arg>classFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="NOT RUN" start="2025-12-07T00:34:54.363455" elapsed="0.000091"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:11:05.688493" level="INFO">Typing text 'Yuva@123' into text field 'id:password'.</msg>
-<arg>id:password</arg>
-<arg>Yuva@123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:11:05.687949" elapsed="3.281757"/>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Class ChromeDriver</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-12-07T00:34:54.365220" elapsed="0.000131"/>
 </kw>
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:11:08.971032" level="INFO">Selecting options from selection list 'days' by label 14.</msg>
-<arg>days</arg>
-<arg>14</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-12-04T16:11:08.970431" elapsed="11.445872"/>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="NOT RUN" start="2025-12-07T00:34:54.366098" elapsed="0.000074"/>
 </kw>
-<kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:11:20.418118" level="INFO">Selecting options from selection list 'months' by value 12.</msg>
-<arg>months</arg>
-<arg>12</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2025-12-04T16:11:20.417571" elapsed="7.404601"/>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-12-07T00:34:54.366819" elapsed="0.000056"/>
 </kw>
-<kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:11:27.825141" level="INFO">Selecting options from selection list 'years' by value 2001.</msg>
-<arg>years</arg>
-<arg>2001</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2025-12-04T16:11:27.824600" elapsed="7.668299"/>
-</kw>
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:11:35.497977" level="INFO">Selecting checkbox 'id:newsletter'.</msg>
-<arg>id:newsletter</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:11:35.497392" elapsed="5.264713"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:11:40.763696" level="INFO">Typing text 'yuva' into text field 'xpath://input[@id='first_name']'.</msg>
-<arg>xpath://input[@id='first_name']</arg>
-<arg>yuva</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:11:40.763097" elapsed="3.393397"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:11:44.160271" level="INFO">Typing text 'shree' into text field 'xpath://input[@id='last_name']'.</msg>
-<arg>xpath://input[@id='last_name']</arg>
-<arg>shree</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:11:44.159490" elapsed="3.581569"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:11:47.745868" level="INFO">Typing text 'abc@company.com' into text field 'xpath://input[@id='company']'.</msg>
-<arg>xpath://input[@id='company']</arg>
-<arg>abc@company.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:11:47.745465" elapsed="3.454545"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:11:51.202833" level="INFO">Typing text '23th/3rd cross bangalore' into text field 'xpath://input[@id='address1']'.</msg>
-<arg>xpath://input[@id='address1']</arg>
-<arg>23th/3rd cross bangalore</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:11:51.202291" elapsed="3.564977"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:11:54.770986" level="INFO">Typing text 'abcd postoffice opposite' into text field 'xpath://input[@id='address2']'.</msg>
-<arg>xpath://input[@id='address2']</arg>
-<arg>abcd postoffice opposite</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:11:54.770386" elapsed="3.369294"/>
-</kw>
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:11:58.142817" level="INFO">Selecting options from selection list 'country' by label India.</msg>
-<arg>country</arg>
-<arg>India</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-12-04T16:11:58.141625" elapsed="8.895632"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:12:07.041302" level="INFO">Typing text 'Andhra Pradesh' into text field 'xpath://input[@id='state']'.</msg>
-<arg>xpath://input[@id='state']</arg>
-<arg>Andhra Pradesh</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:12:07.040211" elapsed="3.527581"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:12:10.569779" level="INFO">Typing text 'vizag' into text field 'xpath://input[@id='city']'.</msg>
-<arg>xpath://input[@id='city']</arg>
-<arg>vizag</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:12:10.569175" elapsed="4.154949"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:12:14.731983" level="INFO">Typing text '567898' into text field 'xpath://input[@id='zipcode']'.</msg>
-<arg>xpath://input[@id='zipcode']</arg>
-<arg>567898</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:12:14.731435" elapsed="3.439607"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:12:18.172988" level="INFO">Typing text '+919876543210' into text field 'xpath://input[@id='mobile_number']'.</msg>
-<arg>xpath://input[@id='mobile_number']</arg>
-<arg>+919876543210</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:12:18.172670" elapsed="3.310470"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:12:21.506189" level="INFO">Clicking element 'xpath://button[normalize-space()='Create Account']'.</msg>
-<arg>xpath://button[normalize-space()='Create Account']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:12:21.504494" elapsed="5.289379"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>xpath://b[normalize-space()='Account Created!']</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-12-04T16:12:26.795227" elapsed="1.522362"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-12-04T16:12:28.319160" level="INFO">Clicking element 'xpath://a[normalize-space()='Continue']'.</msg>
-<arg>xpath://a[normalize-space()='Continue']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-04T16:12:28.318590" elapsed="7.113780"/>
-</kw>
-<status status="PASS" start="2025-12-04T16:10:42.298946" elapsed="113.134306"/>
+<status status="FAIL" start="2025-12-07T00:34:49.258551" elapsed="5.108802">Element with locator 'packageListFrame' not found.</status>
 </test>
-<status status="PASS" start="2025-12-04T16:10:41.957073" elapsed="113.477891"/>
+<status status="FAIL" start="2025-12-07T00:34:48.931492" elapsed="5.438234"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Robot S4A1 Create Account" id="s1" pass="1" fail="0" skip="0">Robot S4A1 Create Account</stat>
+<stat name="Handling Frames" id="s1" pass="0" fail="1" skip="0">Handling Frames</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-12-04T16:10:42.642801" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\Users\Yuvashree.J\AppData\Local\Programs\Python\Python313\Scripts\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.41); currently, chromedriver 143.0.7499.40 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>

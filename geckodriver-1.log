@@ -1,0 +1,28 @@
+1765039303305	geckodriver	INFO	Listening on 127.0.0.1:57945
+1765039306328	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57946" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\YUVASH~1.J\\AppData\\Local\\Temp\\rust_mozprofileNNlC5Q"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1765039308087	Marionette	INFO	Marionette enabled
+1765039308302	Marionette	INFO	Listening on port 64337
+Read port: 64337
+WebDriver BiDi listening on ws://127.0.0.1:57946
+1765039308477	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Killing GPU process due to IPC reply timeout
+[GFX1-]: Calling WaitFlushedEvent::Run: is delayed: 16614
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: IPC Channel is already torn down unexpectedly
+
+[Parent 30428, Main Thread] WARNING: base::KillProcess refusing to terminate process handle 0: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:350
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: shader-cache: Failed to deserialize program binary: File size is too small
+[ERROR webrender_bindings::program_cache] shader-cache: Failed to deserialize program binary: File size is too small
+[GFX1-]: shader-cache: Failed to deserialize program binary: File size is too small
+[ERROR webrender_bindings::program_cache] shader-cache: Failed to deserialize program binary: File size is too small
+[GFX1-]: shader-cache: Failed to deserialize program binary: File size is too small
+[ERROR webrender_bindings::program_cache] shader-cache: Failed to deserialize program binary: File size is too small
+JavaScript warning: https://www.automationexercise.com/static/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

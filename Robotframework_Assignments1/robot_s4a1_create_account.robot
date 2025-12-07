@@ -10,7 +10,7 @@ Create new account
     open browser    ${website link}     ${browser}
     Maximize browser window
     wait until page contains element    xpath://h2[normalize-space()='New User Signup!']
-    set selenium speed  1s
+    # set selenium speed  1s
 
     Input text      xpath://input[@placeholder='Name']    yuvashreej
     Input text      xpath://input[@data-qa='signup-email']    yuvaj@gmail.com
@@ -24,6 +24,7 @@ Create new account
     select from list by label   days    14
     select from list by value   months     12      
     select from list by value   years    2001
+    # select from list by index
 
     select checkbox    id:newsletter
 
