@@ -1,79 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-12-07T00:34:48.929926" rpa="false" schemaversion="5">
-<suite id="s1" name="Handling Frames" source="C:\Users\Yuvashree.J\Documents\Python Programming\Robot Framework Automation\Robotframework_Test_cases\Handling_Frames.robot">
-<test id="s1-t1" name="Testing Frames Example 2" line="5">
+<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-12-07T18:38:45.124615" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot S10A1 Goto Goback Getlocation" source="C:\Users\Yuvashree.J\Documents\Python Programming\Robot Framework Automation\Robotframework_Assignments1\robot_s10a1_goto_goback_getlocation.robot">
+<test id="s1-t1" name="Open homepage, get current location, go to product page, and go back" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-07T00:34:49.260138" level="INFO">Opening browser 'chrome' to base url 'https://www.selenium.dev/selenium/docs/api/java/index.html'.</msg>
-<arg>https://www.selenium.dev/selenium/docs/api/java/index.html</arg>
+<msg time="2025-12-07T18:38:45.287600" level="INFO">Opening browser 'chrome' to base url 'https://www.automationexercise.com/'.</msg>
+<arg>https://www.automationexercise.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-07T00:34:49.259716" elapsed="4.730433"/>
+<status status="PASS" start="2025-12-07T18:38:45.287432" elapsed="6.108821"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-07T00:34:53.990973" elapsed="0.113839"/>
+<status status="PASS" start="2025-12-07T18:38:51.397508" elapsed="0.182414"/>
 </kw>
-<kw name="Select Frame" owner="SeleniumLibrary">
-<msg time="2025-12-07T00:34:54.106939" level="INFO">Selecting frame 'packageListFrame'.</msg>
-<msg time="2025-12-07T00:34:54.346513" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-12-07T00:34:54.347503" level="FAIL">Element with locator 'packageListFrame' not found.</msg>
-<arg>packageListFrame</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="FAIL" start="2025-12-07T00:34:54.105921" elapsed="0.251542">Element with locator 'packageListFrame' not found.</status>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-12-07T18:38:51.614530" level="INFO">${homepage_url} = https://www.automationexercise.com/</msg>
+<var>${homepage_url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-12-07T18:38:51.581187" elapsed="0.033597"/>
 </kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<arg>org.openqa.selenium.chrome</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-12-07T00:34:54.359550" elapsed="0.000099"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Current URL: ${homepage_url}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-07T18:38:51.616251" elapsed="0.008246"/>
 </kw>
-<kw name="Unselect Frame" owner="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="NOT RUN" start="2025-12-07T00:34:54.360518" elapsed="0.000107"/>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-07T18:38:51.625787" level="INFO">Opening url 'https://www.automationexercise.com/products'</msg>
+<arg>https://www.automationexercise.com/products</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-07T18:38:51.625497" elapsed="6.181003"/>
 </kw>
-<kw name="Select Frame" owner="SeleniumLibrary">
-<arg>packageFrame</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="NOT RUN" start="2025-12-07T00:34:54.361214" elapsed="0.000064"/>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>All Products</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-07T18:38:57.807613" elapsed="0.059209"/>
 </kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<arg>ChromeDriver</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-12-07T00:34:54.361717" elapsed="0.000056"/>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-12-07T18:38:57.888203" level="INFO">${productpage_url} = https://www.automationexercise.com/products</msg>
+<var>${productpage_url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-12-07T18:38:57.867412" elapsed="0.020882"/>
 </kw>
-<kw name="Unselect Frame" owner="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="NOT RUN" start="2025-12-07T00:34:54.362151" elapsed="0.000052"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Current URL: ${productpage_url}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-07T18:38:57.889022" elapsed="0.000615"/>
 </kw>
-<kw name="Select Frame" owner="SeleniumLibrary">
-<arg>classFrame</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="NOT RUN" start="2025-12-07T00:34:54.363455" elapsed="0.000091"/>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-12-07T18:38:57.890027" elapsed="2.569740"/>
 </kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<arg>Class ChromeDriver</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2025-12-07T00:34:54.365220" elapsed="0.000131"/>
-</kw>
-<kw name="Unselect Frame" owner="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="NOT RUN" start="2025-12-07T00:34:54.366098" elapsed="0.000074"/>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Full-Fledged practice website for Automation Engineers</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-07T18:39:00.460376" elapsed="0.062945"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-12-07T00:34:54.366819" elapsed="0.000056"/>
+<status status="PASS" start="2025-12-07T18:39:00.523874" elapsed="2.409046"/>
 </kw>
-<status status="FAIL" start="2025-12-07T00:34:49.258551" elapsed="5.108802">Element with locator 'packageListFrame' not found.</status>
+<status status="PASS" start="2025-12-07T18:38:45.286757" elapsed="17.646936"/>
 </test>
-<status status="FAIL" start="2025-12-07T00:34:48.931492" elapsed="5.438234"/>
+<status status="PASS" start="2025-12-07T18:38:45.125891" elapsed="17.809501"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Handling Frames" id="s1" pass="0" fail="1" skip="0">Handling Frames</stat>
+<stat name="Robot S10A1 Goto Goback Getlocation" id="s1" pass="1" fail="0" skip="0">Robot S10A1 Goto Goback Getlocation</stat>
 </suite>
 </statistics>
 <errors>
