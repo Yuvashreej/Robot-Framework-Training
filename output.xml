@@ -1,67 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-12-07T18:38:45.124615" rpa="false" schemaversion="5">
-<suite id="s1" name="Robot S10A1 Goto Goback Getlocation" source="C:\Users\Yuvashree.J\Documents\Python Programming\Robot Framework Automation\Robotframework_Assignments1\robot_s10a1_goto_goback_getlocation.robot">
-<test id="s1-t1" name="Open homepage, get current location, go to product page, and go back" line="5">
+<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-12-08T23:50:49.632239" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot S12A3 Drag And Drop Operation" source="C:\Users\Yuvashree.J\Documents\Python Programming\Robot Framework Automation\Robotframework_Assignments1\robot_s12a3_drag_and_drop_operation.robot">
+<test id="s1-t1" name="Verify Element Can Be Dragged and Dropped Successfully" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-07T18:38:45.287600" level="INFO">Opening browser 'chrome' to base url 'https://www.automationexercise.com/'.</msg>
-<arg>https://www.automationexercise.com/</arg>
+<msg time="2025-12-08T23:50:49.975832" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-07T18:38:45.287432" elapsed="6.108821"/>
+<status status="PASS" start="2025-12-08T23:50:49.975553" elapsed="9.740125"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-07T18:38:51.397508" elapsed="0.182414"/>
+<status status="PASS" start="2025-12-08T23:50:59.717094" elapsed="0.073023"/>
 </kw>
-<kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-12-07T18:38:51.614530" level="INFO">${homepage_url} = https://www.automationexercise.com/</msg>
-<var>${homepage_url}</var>
-<doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-12-07T18:38:51.581187" elapsed="0.033597"/>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:draggable</arg>
+<arg>id:droppable</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-12-08T23:50:59.790953" elapsed="0.783583"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Current URL: ${homepage_url}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-07T18:38:51.616251" elapsed="0.008246"/>
-</kw>
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-12-07T18:38:51.625787" level="INFO">Opening url 'https://www.automationexercise.com/products'</msg>
-<arg>https://www.automationexercise.com/products</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-12-07T18:38:51.625497" elapsed="6.181003"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>All Products</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-12-07T18:38:57.807613" elapsed="0.059209"/>
-</kw>
-<kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-12-07T18:38:57.888203" level="INFO">${productpage_url} = https://www.automationexercise.com/products</msg>
-<var>${productpage_url}</var>
-<doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-12-07T18:38:57.867412" elapsed="0.020882"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Current URL: ${productpage_url}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-07T18:38:57.889022" elapsed="0.000615"/>
-</kw>
-<kw name="Go Back" owner="SeleniumLibrary">
-<doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" start="2025-12-07T18:38:57.890027" elapsed="2.569740"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Full-Fledged practice website for Automation Engineers</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-12-07T18:39:00.460376" elapsed="0.062945"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-08T23:51:02.585590" level="INFO">Slept 2 seconds.</msg>
+<arg>2sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-08T23:51:00.582721" elapsed="2.003137"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-12-07T18:39:00.523874" elapsed="2.409046"/>
+<status status="PASS" start="2025-12-08T23:51:02.586503" elapsed="2.368309"/>
 </kw>
-<status status="PASS" start="2025-12-07T18:38:45.286757" elapsed="17.646936"/>
+<status status="PASS" start="2025-12-08T23:50:49.974405" elapsed="14.980795"/>
 </test>
-<status status="PASS" start="2025-12-07T18:38:45.125891" elapsed="17.809501"/>
+<status status="PASS" start="2025-12-08T23:50:49.635667" elapsed="15.320406"/>
 </suite>
 <statistics>
 <total>
@@ -70,7 +40,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Robot S10A1 Goto Goback Getlocation" id="s1" pass="1" fail="0" skip="0">Robot S10A1 Goto Goback Getlocation</stat>
+<stat name="Robot S12A3 Drag And Drop Operation" id="s1" pass="1" fail="0" skip="0">Robot S12A3 Drag And Drop Operation</stat>
 </suite>
 </statistics>
 <errors>
